@@ -12,6 +12,10 @@ html {
     text-size-adjust: none;
 }
 
+body {
+    font-size: 62.5%;
+}
+
 body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     margin: 0
 }
@@ -60,5 +64,16 @@ textarea:not([rows]) {
 */
 
 header {
-    font-size: 5rem;
+    font-size: 1rem;
+    display: flex;
+    height: 80px;
+    background: pink;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
 }

@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
+    <>
     <header>
       <h1 className={commonStyles.title}>TAKANASHI NIKO</h1>
       <nav>
@@ -27,7 +28,7 @@ export default function Home() {
         </ul>
       </nav>
     </header>
-
-
+    <Image src="/takanashi_logo.svg" alt="小鳥遊にこのlogo" width={500} height={500} />
+    </>
   );
 }
