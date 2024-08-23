@@ -1,33 +1,33 @@
-import Image from "next/image";
+import commonStyles from "./globals.css";
 import styles from "./page.module.css";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <>
-      {/* <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div> */}
+    <header>
+      <h1 className={commonStyles.title}>TAKANASHI NIKO</h1>
+      <nav>
+        <ul>
+          <li>
+            <Link href="/">
+              HOME
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              ABOUT
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              CONTACT
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      {/* <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a> */}
-    </>
+
   );
 }
