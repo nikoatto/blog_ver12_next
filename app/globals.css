@@ -12,10 +12,6 @@ html {
     text-size-adjust: none;
 }
 
-body {
-    font-size: 62.5%;
-}
-
 body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     margin: 0
 }
@@ -59,21 +55,67 @@ textarea:not([rows]) {
     scroll-margin-block: 5ex
 }
 
+html {
+    font-size: 10px;
+}
+
+
 /*
 ここまで　リセットCSS 
 */
 
 header {
     font-size: 1rem;
-    display: flex;
     height: 80px;
     background: pink;
-    justify-content: space-between; 
+    border-bottom: 3px solid #222;
+}
+
+.headerContainer {
+    margin: 0 3%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
     gap: 60px;
+}
+
+.mainContainer {
+    margin: 3%;
+    background: #eee;
+}
+
+.topLogo {
+    margin: auto;
+}
+
+.topWorkHead {
+    display: flex;
+    height: 180px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topMainInnner {
+    margin: 8%;
+    border-bottom: solid 2px black;
+}
+
+.topMainCaption {
+    font-size: 6rem;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000,
+        -1px 1px 0 #000, 1px -1px 0 #000,
+        0px 1px 0 #000, 0-1px 0 #000,
+        -1px 0 0 #000, 1px 0 0 #000;
+}
+
+.topMainDesc {
+    width: 400px;
+    font-size: 1.6rem;
 }
