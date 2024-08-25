@@ -22,7 +22,7 @@ ul[role='list'], ol[role='list'] {
 
 body {
     min-height: 100vh;
-    line-height: 1.5
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, button, input, label {
@@ -30,12 +30,13 @@ h1, h2, h3, h4, button, input, label {
 }
 
 h1, h2, h3, h4 {
-    text-wrap: balance
+    text-wrap: balance;
 }
 
 a:not([class]) {
     text-decoration-skip-ink: auto;
     color: currentColor;
+    text-decoration: none;
 }
 
 img, picture {
@@ -55,14 +56,53 @@ textarea:not([rows]) {
     scroll-margin-block: 5ex
 }
 
-html {
-    font-size: 10px;
-}
-
-
 /*
 ここまで　リセットCSS 
 */
+
+@font-face {
+    font-family: 'ZenKakuGothicNew';
+    src: url('/fonts/ZenKakuGothicNew-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ZenKakuGothicNew';
+    src: url('/fonts/ZenKakuGothicNew-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ZenKakuGothicNew';
+    src: url('/fonts/ZenKakuGothicNew-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ZenKakuGothicNew';
+    src: url('/fonts/ZenKakuGothicNew-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ZenKakuGothicNew';
+    src: url('/fonts/ZenKakuGothicNew-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    font-family: 'ZenKakuGothicNew', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
 
 header {
     font-size: 1rem;
@@ -78,7 +118,7 @@ header {
     align-items: center;
 }
 
-nav ul {
+.headerSNS__icon {
     display: flex;
     align-items: center;
     gap: 60px;
@@ -93,7 +133,7 @@ nav ul {
     margin: auto;
 }
 
-.topWorkHead {
+.topContentsHead {
     display: flex;
     height: 180px;
     width: 100%;
@@ -101,21 +141,125 @@ nav ul {
     align-items: center;
 }
 
-.topMainInnner {
-    margin: 8%;
-    border-bottom: solid 2px black;
+.topContentsInner {
+    margin: 160px 8% 20px;
+    border-bottom: 2px solid #000;
 }
 
-.topMainCaption {
+.topContentsCaption {
     font-size: 6rem;
     color: #fff;
-    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000,
-        -1px 1px 0 #000, 1px -1px 0 #000,
-        0px 1px 0 #000, 0-1px 0 #000,
-        -1px 0 0 #000, 1px 0 0 #000;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000,
+        -2px 2px 0 #000, 2px -2px 0 #000,
+        0px 2px 0 #000, 0 -2px 0 #000,
+        -2px 0 0 #000, 2px 0 0 #000;
 }
 
-.topMainDesc {
-    width: 400px;
+.topContentsDesc {
+    width: 40%;
     font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.globalNav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #fff;
+}
+
+.globalNav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.globalNav ul li {
+    list-style: none;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    width: 180px;
+}
+
+.globalNav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    display: block;
+    padding: 20px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000,
+        -2px 2px 0 #000, 2px -2px 0 #000,
+        0px 2px 0 #000, 0 -2px 0 #000,
+        -2px 0 0 #000, 2px 0 0 #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* top */
+
+.topBlog, .topWokrs {
+    display: grid;
+    margin: 0 8%;
+}
+
+.topWokrs {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.topBlog {
+    display: grid;
+    margin: 0 8%;
+}
+
+
+.topWokrs__item {
+    background: #fff;
+    border: 2px solid #000;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.topWokrs__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #222;
+}
+
+
+.topBlog__item {
+
+    border-bottom: 2px solid #000;
+    width: 100%;
+    padding: 2% 0;
+}
+
+.topBlog__item:first-child {
+    border-top: 2px solid #000;
+}
+
+.topBlog__info {
+    display: flex;
+    font-size: 1.6rem;
+    gap: 60px;
+    font-weight: 700;
+}
+
+.topBlog__title {
+    font-size: 4.8rem;
+    font-weight: 900;
 }
