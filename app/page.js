@@ -21,36 +21,38 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <nav className="globalNav">
+          <ul>
+            <li>
+              <Link href="/">
+                HOME
+              </Link>
+            </li>
+            <li>
+              <Link href="/about">
+                ABOUT
+              </Link>
+            </li>
+            <li>
+              <Link href="/about">
+                WORKS
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact">
+                CONTACT
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </header>
 
-      <nav className="globalNav">
-        <ul>
-          <li>
-            <Link href="/">
-              HOME
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              ABOUT
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              WORKS
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-              CONTACT
-            </Link>
-          </li>
-        </ul>
-      </nav>
+
 
       <div className="mainContainer">
         {/* ========================= top Contianer START ========================= */}
         <div className="topContainer">
+          <br />
           <Image className="topLogo" src="/takanashi_logo.svg" alt="小鳥遊にこのlogo" width={500} height={500} />
         </div>
         <div id="topWorkContainer">
@@ -89,8 +91,8 @@ export default function Home() {
           </div>
 
           <Link href="/works">
-            <div className="topWorks__more">
-              <p>View All</p>
+            <div className="topMore">
+              <p>VIEW ALL</p>
             </div>
           </Link>
         </div>
@@ -143,11 +145,39 @@ export default function Home() {
             </div>
           </div>
           <Link href="/blog">
-            <div className="topBlog__more">
-              <p>View All</p>
+            <div className="topMore">
+              <p>VIEW ALL</p>
             </div>
           </Link>
+        </div>
 
+        <div className="topAbout_container">
+          <Image className="topLogo" src="/takanashi_logo.svg" alt="小鳥遊にこのlogo" width={500} height={500} />
+          <div className='topContainer'>
+            <div className="aboutContentsInner">
+              <div className="topContentsHead">
+                <h2 className="topContentsCaption">ABOUT</h2>
+              </div>
+            </div>
+            <div className='topAbout'>
+              <h2 className='topAboutName'>小鳥遊 にこ</h2>
+              <p className='topAboutNameEng'>Takanashi Niko</p>
+              <p>
+                LIKE /<br />
+                DRUMS / COFFEE / ILLUST / PASTA / JAZZ
+              </p>
+              <p>
+                本職はデザインや、ウェブクリエイトをさせていただいてます。このブログではいろいろなことに興味がある私ですので、好きなことを軸にブログなんかで掘り下げることができればと思っています。
+              </p>
+              <div>
+                <p>instagram</p>
+                <p>pixiv</p>
+                <p>X</p>
+                <p>Tumbler</p>
+                <p>etc.............................................</p>
+              </div>
+            </div>
+          </div>
         </div>
         {/* ========================= top Contianer END ========================= */}
       </div>

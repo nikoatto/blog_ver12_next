@@ -107,8 +107,10 @@ html {
 header {
     font-size: 1rem;
     height: 80px;
-    background: pink;
     border-bottom: 3px solid #222;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
 }
 
 .headerContainer {
@@ -130,7 +132,8 @@ header {
 }
 
 .topLogo {
-    margin: auto;
+
+    margin: 120px auto;
 }
 
 .topContentsHead {
@@ -143,6 +146,10 @@ header {
 
 .topContentsInner {
     margin: 160px 8% 20px;
+    border-bottom: 2px solid #000;
+}
+
+.aboutContentsInner {
     border-bottom: 2px solid #000;
 }
 
@@ -165,8 +172,8 @@ header {
 .globalNav {
     position: absolute;
     top: 80px;
-    right: 0;
     background: #fff;
+    right: 0;
 }
 
 .globalNav ul {
@@ -263,3 +270,34 @@ header {
     font-size: 4.8rem;
     font-weight: 900;
 }
+
+.topMore {
+    font-size: 3rem;
+    margin: 8%;
+    font-weight: 700;
+    text-align: right;
+}
+
+.topMore p {
+    border-bottom: 2px solid #000;
+    display: inline-block;
+}
+
+.topAbout {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.topAbout_container {
+    display: grid;
+    margin: 0 8%;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.topAboutName {
+    font-size: 4.8rem;
+}
+
+.topAboutNameEng {}
