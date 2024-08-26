@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    basePath: '/test',
-    assetPrefix: '/test',
-    trailingSlash: true,
+    // basePath: '/test',　// アップロード時に有効にする
+    // assetPrefix: '/test', // アップロード時に有効にする
+    // trailingSlash: true, // アップロード時に有効にする
     images: {
         unoptimized: true,  // 画像最適化を無効化
     },

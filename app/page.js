@@ -10,7 +10,7 @@ export default function Home() {
       <header>
         <div className="headerContainer">
           <Link href="/">
-            <Image src="takanashi_logo_type.svg" width={200} height={80} />
+            <Image src="/takanashi_logo_type.svg" width={200} height={80} />
           </Link>
           <div className="headerSNS__icon">
             <Link href="https://x.com/takanikoillust">
