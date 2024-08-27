@@ -14,14 +14,14 @@ export default function Home() {
           </Link>
           <div className="headerSNS__icon">
             <Link href="https://x.com/takanikoillust">
-              <Image className="headerSNS__icon--instagram" src="/large-x-logo.png.twimg.1920.png" alt="SNSのアイコン" width={40} height={40} />
+              <Image className="headerSNS__icon--instagram" src="/large-x-logo.png.twimg.1920.png" alt="SNSのアイコン" width={32} height={32} />
             </Link>
             <Link href="https://www.instagram.com/takanashi_niko/">
-              <Image className="headerSNS__icon--x" src="/Instagram_Glyph_Black.svg" alt="SNSのアイコン" width={40} height={40} />
+              <Image className="headerSNS__icon--x" src="/Instagram_Glyph_Black.svg" alt="SNSのアイコン" width={32} height={32} />
             </Link>
           </div>
         </div>
-        <nav className="globalNav">
+        {/* <nav className="globalNav">
           <ul>
             <li>
               <Link href="/">
@@ -44,57 +44,17 @@ export default function Home() {
               </Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </header>
 
 
 
       <div className="mainContainer">
         {/* ========================= top Contianer START ========================= */}
+
         <div className="topContainer">
           <br />
-          <Image className="topLogo" src="/takanashi_logo.svg" alt="小鳥遊にこのlogo" width={500} height={500} />
-        </div>
-        <div id="topWorkContainer">
-          <div className="topContentsInner">
-            <div className="topContentsHead">
-              <h2 className="topContentsCaption">WORK</h2>
-              <p className="topContentsDesc">私の描いたイラストです。ボヤけてるのはセンシティブなやつ。えっちな絵も描きます。</p>
-            </div>
-          </div>
-
-          <div className="top">
-            {/* ここ横スクロールにしたいなぁと思っています */}
-            <div className="topWokrs">
-              <div className="topWokrs__item">
-                <Image src="/works/1.jpg" alt="イラスト" width={300} height={300} />
-              </div>
-              <div className="topWokrs__item">
-                <Image src="/works/2.jpg" alt="イラスト" width={300} height={300} />
-              </div>
-              <div className="topWokrs__item">
-                <Image src="/works/3.jpg" alt="イラスト" width={300} height={300} />
-              </div>
-              <div className="topWokrs__item">
-                <Image src="/works/4.jpg" alt="イラスト" width={300} height={300} />
-              </div>
-              <div className="topWokrs__item">
-                <Image src="/works/5.jpg" alt="イラスト" width={300} height={300} />
-              </div>
-              <div className="topWokrs__item">
-                <Image src="/works/6.jpg" alt="イラスト" width={300} height={300} />
-              </div>
-              <div className="topWokrs__item">
-                <Image src="/works/7.jpg" alt="イラスト" width={300} height={300} />
-              </div>
-            </div>
-          </div>
-
-          <Link href="/works">
-            <div className="topMore">
-              <p>VIEW ALL</p>
-            </div>
-          </Link>
+          <Image className="topLogo" src="/takanashi_logo.svg" alt="小鳥遊にこのlogo" width={400} height={400} />
         </div>
 
         <div id="topBlogContainer">
@@ -150,6 +110,50 @@ export default function Home() {
             </div>
           </Link>
         </div>
+
+        <div id="topWorkContainer" className='topWorkContainer'>
+          <div className="topContentsInner">
+            <div className="topContentsHead">
+              <h2 className="topContentsCaption">WORK</h2>
+              <p className="topContentsDesc">私の描いたイラストです。ボヤけてるのはセンシティブなやつ。えっちな絵も描きます。</p>
+            </div>
+          </div>
+
+          <div className="top">
+            {/* ここ横スクロールにしたいなぁと思っています */}
+            <div className="topWokrs">
+              <div className="topWokrs__item">
+                <Image src="/works/1.jpg" alt="イラスト" width={300} height={300} />
+              </div>
+              <div className="topWokrs__item">
+                <Image src="/works/2.jpg" alt="イラスト" width={300} height={300} />
+              </div>
+              <div className="topWokrs__item">
+                <Image src="/works/3.jpg" alt="イラスト" width={300} height={300} />
+              </div>
+              <div className="topWokrs__item">
+                <Image src="/works/4.jpg" alt="イラスト" width={300} height={300} />
+              </div>
+              <div className="topWokrs__item">
+                <Image src="/works/5.jpg" alt="イラスト" width={300} height={300} />
+              </div>
+              <div className="topWokrs__item">
+                <Image src="/works/6.jpg" alt="イラスト" width={300} height={300} />
+              </div>
+              <div className="topWokrs__item">
+                <Image src="/works/7.jpg" alt="イラスト" width={300} height={300} />
+              </div>
+            </div>
+            <Link href="/works">
+              <div className="topMore">
+                <p>VIEW ALL</p>
+              </div>
+            </Link>
+          </div>
+
+
+        </div>
+
 
         <div className="topAbout_container">
           <Image className="topLogo" src="/takanashi_logo.svg" alt="小鳥遊にこのlogo" width={500} height={500} />

@@ -95,6 +95,10 @@ textarea:not([rows]) {
     font-style: normal;
 }
 
+:root {
+    --in-border-fmt: 2px solid #222;
+}
+
 body {
     position: relative;
     font-family: 'ZenKakuGothicNew', sans-serif;
@@ -106,8 +110,8 @@ html {
 
 header {
     font-size: 1rem;
-    height: 80px;
-    border-bottom: 3px solid #222;
+    height: 100px;
+    border-bottom: var(--in-border-fmt);
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -136,28 +140,23 @@ header {
     margin: 120px auto;
 }
 
-.topContentsHead {
-    display: flex;
-    height: 180px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
+.topContentsHead {}
 
 .topContentsInner {
     margin: 160px 8% 20px;
-    border-bottom: 2px solid #000;
+    border-bottom: var(--in-border-fmt)
 }
 
 .aboutContentsInner {
-    border-bottom: 2px solid #000;
+    border-bottom: var(--in-border-fmt)
 }
 
 .topContentsCaption {
     font-size: 6rem;
     color: #fff;
     letter-spacing: 10px;
-    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000,
+    text-shadow:
+        2px 2px 0 #000, -2px -2px 0 #000,
         -2px 2px 0 #000, 2px -2px 0 #000,
         0px 2px 0 #000, 0 -2px 0 #000,
         -2px 0 0 #000, 2px 0 0 #000;
@@ -166,12 +165,12 @@ header {
 .topContentsDesc {
     width: 40%;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .globalNav {
     position: absolute;
-    top: 80px;
+    top: 100px;
     background: #fff;
     right: 0;
 }
@@ -183,9 +182,9 @@ header {
 
 .globalNav ul li {
     list-style: none;
-    border-right: 2px solid #000;
-    border-bottom: 2px solid #000;
-    border-left: 2px solid #000;
+    border-right: var(--in-border-fmt);
+    border-bottom: var(--in-border-fmt);
+    border-left: var(--in-border-fmt);
     width: 180px;
 }
 
@@ -197,7 +196,8 @@ header {
     font-weight: 900;
     display: block;
     padding: 20px;
-    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000,
+    text-shadow:
+        2px 2px 0 #000, -2px -2px 0 #000,
         -2px 2px 0 #000, 2px -2px 0 #000,
         0px 2px 0 #000, 0 -2px 0 #000,
         -2px 0 0 #000, 2px 0 0 #000;
@@ -230,10 +230,17 @@ header {
     margin: 0 8%;
 }
 
+.topWorkContainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
 
 .topWokrs__item {
     background: #fff;
-    border: 2px solid #000;
+    border: var(--in-border-fmt);
     display: flex;
 
     justify-content: center;
@@ -250,13 +257,14 @@ header {
 
 .topBlog__item {
 
-    border-bottom: 2px solid #000;
+    border-bottom: var(--in-border-fmt);
     width: 100%;
     padding: 2% 0;
 }
 
 .topBlog__item:first-child {
-    border-top: 2px solid #000;
+    border-top: var(--in-border-fmt);
+
 }
 
 .topBlog__info {
@@ -279,7 +287,7 @@ header {
 }
 
 .topMore p {
-    border-bottom: 2px solid #000;
+    border-bottom: var(--in-border-fmt);
     display: inline-block;
 }
 
