@@ -23,6 +23,7 @@ ul[role='list'], ol[role='list'] {
 body {
     min-height: 100vh;
     line-height: 1.5;
+    background: #eee;
 }
 
 h1, h2, h3, h4, button, input, label {
@@ -131,14 +132,23 @@ header {
 }
 
 .mainContainer {
-    margin: 3%;
+    /* margin: 3%; */
     padding: 8%;
     background: #eee;
+    width: 100vw;
+    height: 80vh;
 }
 
 .topLogo {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+}
 
-    margin: 120px auto;
+.topLogo img {
+    position: fixed;
+    inset: 0;
+    margin: auto;
 }
 
 .topContentsHead {
@@ -154,17 +164,6 @@ header {
 
 .aboutContentsInner {
     border-bottom: var(--in-border-fmt)
-}
-
-.topContentsCaption {
-    font-size: 6rem;
-    color: #fff;
-    letter-spacing: 10px;
-    text-shadow:
-        2px 2px 0 #000, -2px -2px 0 #000,
-        -2px 2px 0 #000, 2px -2px 0 #000,
-        0px 2px 0 #000, 0 -2px 0 #000,
-        -2px 0 0 #000, 2px 0 0 #000;
 }
 
 .topContentsDesc {
@@ -207,6 +206,51 @@ header {
         0px 2px 0 #000, 0 -2px 0 #000,
         -2px 0 0 #000, 2px 0 0 #000;
 }
+
+.topContentsCaption {
+    font-size: 5rem;
+    color: #fff;
+    letter-spacing: 10px;
+    text-shadow:
+        2px 2px 0 #000, -2px -2px 0 #000,
+        -2px 2px 0 #000, 2px -2px 0 #000,
+        0px 2px 0 #000, 0 -2px 0 #000,
+        -2px 0 0 #000, 2px 0 0 #000;
+}
+
+.dockContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    grid-gap: 40px;
+    gap: 40px;
+    padding: 10px 40px;
+    border-radius: 2000rem;
+    border: var(--in-border-fmt);
+}
+
+.dockItem {
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 10px;
+    text-shadow:
+        2px 2px 0 #000, -2px -2px 0 #000,
+        -2px 2px 0 #000, 2px -2px 0 #000,
+        0px 2px 0 #000, 0 -2px 0 #000,
+        -2px 0 0 #000, 2px 0 0 #000;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -330,4 +374,9 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    gap: 40px;
 }

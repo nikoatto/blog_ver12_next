@@ -14,10 +14,10 @@ export default function Home() {
           </Link>
           <div className="headerSNS__icon">
             <Link href="https://x.com/takanikoillust">
-              <Image className="headerSNS__icon--instagram" src="/large-x-logo.png.twimg.1920.png" alt="SNSのアイコン" width={32} height={32} />
+              <Image className="headerSNS__icon--instagram" src="/large-x-logo.png.twimg.1920.png" alt="SNSのアイコン" width={28} height={28} />
             </Link>
             <Link href="https://www.instagram.com/takanashi_niko/">
-              <Image className="headerSNS__icon--x" src="/Instagram_Glyph_Black.svg" alt="SNSのアイコン" width={32} height={32} />
+              <Image className="headerSNS__icon--x" src="/Instagram_Glyph_Black.svg" alt="SNSのアイコン" width={28} height={28} />
             </Link>
           </div>
         </div>
@@ -58,15 +58,18 @@ export default function Home() {
         </div>
 
         <div id="topBlogContainer">
-          <div className="topContentsLinks">
-            <h2 className="topContentsCaption">BLOG</h2>
-            <h2 className="topContentsCaption">WORKS</h2>
+          <div className="dockContainer">
+            <h2 className="dockItem">BLOG</h2>
+            <h2 className="dockItem">WORKS</h2>
           </div>
 
+          {/* BLOGとWORKSの単語を動かしたい。バウンスするとか */}
           {/* スクロールするとトップのアイコンが横に来てアバウトの文字が横から出るようにしたい！ */}
           {/* 個々のコンテンツをフルページに出せるようにしたいなぁ */}
-
-          <div className="topAbout_container">
+          {/* ========================= top Contianer END ========================= */}
+        </div>
+      </div>
+      {/* <div className="topAbout_container">
             <Image className="topLogo" src="/takanashi_logo.svg" alt="小鳥遊にこのlogo" width={500} height={500} />
             <div className='topContainer'>
               <div className="aboutContentsInner">
@@ -93,10 +96,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-          {/* ========================= top Contianer END ========================= */}
-        </div>
-      </div>
+          </div> */}
     </>
   );
 }
+
