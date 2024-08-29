@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
+    target: 'serverless',
     // basePath: '/test',　// アップロード時に有効にする
     // assetPrefix: '/test', // アップロード時に有効にする
     // trailingSlash: true, // アップロード時に有効にする
